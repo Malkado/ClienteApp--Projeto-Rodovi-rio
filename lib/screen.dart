@@ -23,11 +23,13 @@ class _DrawerWidgetState extends State<ScreenWidget> {
 
           decoration: BoxDecoration(
             image: DecorationImage(
-              image: AssetImage('assets/back.jpg'),
+              image: AssetImage('assets/background.jpg'),
               fit: BoxFit.cover,
+
             ),
           ),
         ),
+
         Container(
           child: AppBar(
             backgroundColor: Colors.transparent,

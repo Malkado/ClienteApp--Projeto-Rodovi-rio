@@ -34,10 +34,9 @@ class _DrawerWidgetState extends State<DrawerWidget> {
         break;
       case 3:
         return PageRouteBuilder(
-
           pageBuilder: (context, animation, secondaryAnimation) => CheckIn(),
           transitionsBuilder: (context, animation, secondaryAnimation, child){
-            var begin=Offset(0.0,1.0);
+            var begin=Offset(0.0,2.0);
             var end = Offset.zero;
             var curve = Curves.ease;
 
@@ -47,7 +46,7 @@ class _DrawerWidgetState extends State<DrawerWidget> {
 
 
             return SlideTransition(position: tween.animate(curvedAnimation),
-            child: child,);
+              child: child,);
           },
         );
         break;
